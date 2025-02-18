@@ -1,18 +1,27 @@
 {
-  "name": "clip-clap",
-  "id": "1473377219777887754",
+  "name": "Clip Clap",
+  "id": "1473395006391227968",
   "api": "1.0.0",
+  "documentAccess": "dynamic-page",
   "main": "code.js",
   "capabilities": [],
   "enableProposedApi": false,
-  "documentAccess": "dynamic-page",
   "editorType": [
-    "figma",
-    "figjam"
+    "figma"
   ],
   "networkAccess": {
     "allowedDomains": [
       "none"
     ]
-  }
+  },
+  "menu": [
+    {
+      "name": "Copy Text",
+      "command": "copyText"
+    },
+    {
+      "name": "Paste Text",
+      "command": "pasteText"
+    }
+  ]
 }

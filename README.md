@@ -1,40 +1,53 @@
-Below are the steps to get your plugin running. You can also find instructions at:
+# Clip Clap: Figma Plugin for Copying and Pasting Text
 
-  https://www.figma.com/plugin-docs/plugin-quickstart-guide/
+Clip Clap is a Figma plugin created to quickly copy and paste text within your designs. It is a drop-in replacement for [figma-copy-and-paste-text](https://github.com/kudakurage/figma-copy-and-paste-text) which is a great plugin, but is broken.
 
-This plugin template uses Typescript and NPM, two standard tools in creating JavaScript applications.
+## Features
+- Copy Text: Select text layers and copy their content to Figma's clipboard.
+- Paste Text: Paste copied text into selected text layers, preserving formatting and styles.
 
-First, download Node.js which comes with NPM. This will allow you to install TypeScript and other
-libraries. You can find the download link here:
+## Installation
+1.	Download the Clip Clap plugin from the Figma Community.
+2.	In Figma, go to Plugins › Manage Plugins > Import Plugin from Manifest....
+3.	Select the manifest.json file from the downloaded plugin folder.
 
-  https://nodejs.org/en/download/
+## Usage
 
-Next, install TypeScript using the command:
+1. Copying Text:
+  - Select the text layers you wish to copy.
+  - Run the Copy Text command from the Clip Clap plugin.
+  - The text content is now copied to your clipboard.
+2. Pasting Text:
+  - Select the text layers where you want to paste the copied content.
+  - Run the Paste Text command from the Clip Clap plugin.
+  - The copied text will be pasted into the selected layers, maintaining the original formatting.
 
-  npm install -g typescript
+## Recommended Keyboard Shortcuts
 
-Finally, in the directory of your plugin, get the latest type definitions for the plugin API by running:
+For a more efficient workflow, consider setting up custom keyboard shortcuts for copying (⌥⇧⌘C) and pasting (⌥⇧⌘V):
 
-  npm install --save-dev @figma/plugin-typings
+### On macOS:
+- Go to System Preferences › Keyboard › Shortcuts › App Shortcuts.
+- Click the + button to add a new shortcut.
+- For Copy Text:
+  - Application: Figma
+  - Menu Title: Plugins › Clip Clap › Copy Text
+  - Shortcut: ⌥⇧⌘C (Option + Shift + Command + C)
+- For Paste Text:
+  - Application: Figma
+  - Menu Title: Plugins › Clip Clap › Paste Text
+  - Shortcut: ⌥⇧⌘V (Option + Shift + Command + V)
 
-If you are familiar with JavaScript, TypeScript will look very familiar. In fact, valid JavaScript code
-is already valid Typescript code.
+### On Windows:
+- Go to Settings › Devices › Keyboard › Advanced keyboard settings.
+- Add new shortcuts for the Clip Clap plugin commands as desired.
 
-TypeScript adds type annotations to variables. This allows code editors such as Visual Studio Code
-to provide information about the Figma API while you are writing code, as well as help catch bugs
-you previously didn't notice.
+## Issues?
 
-For more information, visit https://www.typescriptlang.org/
+If you encounter any issues, please open an issue on this GitHub repository.
 
-Using TypeScript requires a compiler to convert TypeScript (code.ts) into JavaScript (code.js)
-for the browser to run.
+## License
 
-We recommend writing TypeScript code using Visual Studio code:
+This project is licensed under the MIT License.
 
-1. Download Visual Studio Code if you haven't already: https://code.visualstudio.com/.
-2. Open this directory in Visual Studio Code.
-3. Compile TypeScript to JavaScript: Run the "Terminal > Run Build Task..." menu item,
-    then select "npm: watch". You will have to do this again every time
-    you reopen Visual Studio Code.
-
-That's it! Visual Studio Code will regenerate the JavaScript file every time you save.
+Note: Clip Clap was developed as a fixed version of [figma-copy-and-paste-text](https://github.com/kudakurage/figma-copy-and-paste-text)-plugin. Big thanks to [@kudakurage](https://github.com/kudakurage) for the original plugin!
