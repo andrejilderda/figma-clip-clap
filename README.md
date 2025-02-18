@@ -7,9 +7,8 @@ Clip Clap is a Figma plugin created to quickly copy and paste text within your d
 - Paste Text: Paste copied text into selected text layers, preserving formatting and styles.
 
 ## Installation
-1.	Download the Clip Clap plugin from the Figma Community.
-2.	In Figma, go to Plugins › Manage Plugins > Import Plugin from Manifest....
-3.	Select the manifest.json file from the downloaded plugin folder.
+
+Open the Clip Clap plugin from the [Figma Community](https://www.figma.com/community/plugin/1473395006391227968/clip-clap).
 
 ## Usage
 
